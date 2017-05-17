@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(135deg,#55efcb 0%,#5bcaff 100%);
+        }
+        #button{
+            color:#f7f7f7;
+            font-family: verdana;
+            width: 200px;
+            padding: 15px;
+            border: 2px solid #f7f7f7;
+            text-align: center;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            transition: .5s;
+        }
+        #button:after{
+            content: '';
+            width: 0px;
+            height: 120%;
+            position: absolute;
+            left: -10%;
+            bottom: 0;
+            background-color: #f7f7f7;
+            transform: skewX(15deg);
+            z-index: -1;
+            transition: .5s;
+        }
+        #button:hover{
+            cursor: pointer;
+            color:#5bcaff;
+        }
+        #button:hover:after{
+            left: -10%;
+            width: 120%;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="button">DAFT CREATION</div>
+    </body>
+</html>
